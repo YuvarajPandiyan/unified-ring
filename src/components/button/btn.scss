@@ -1,0 +1,48 @@
+@import "../../App.scss";
+.btn {
+  display: block;
+  width: 7rem;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.75rem 0.563rem 0.75rem 0.563rem;
+  @media only screen and (min-width: 600px) {
+    padding: 1rem 2.875rem 1rem 2.875rem;
+  }
+  font-family: "Acumin Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &-purple {
+    background: $home-pae-btn-color 0% 0% no-repeat padding-box;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal medium 18px/36px Acumin Pro;
+    letter-spacing: 0px;
+  }
+
+  &-white {
+    background: white 0% 0% no-repeat padding-box;
+    border: 1px solid $home-page-btn-border-and-text-color;
+    color: $home-page-btn-border-and-text-color;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal medium 18px/36px Acumin Pro;
+    letter-spacing: 0px;
+  }
+
+  &-blue {
+    background: #1d76f2 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal medium 18px/36px Acumin Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  &-sub {
+    text-align: center;
+    font-family: Acumin Pro;
+    font-size: 0.625rem;
+    padding-top: 0.25rem;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+}

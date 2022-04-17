@@ -1,0 +1,36 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3.063rem;
+  margin-bottom: 1.2rem;
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+    padding-top: 6.125rem;
+    .order-three {
+      order: 3;
+    }
+  }
+  .brand-icon {
+    padding-bottom: 1.556rem;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    &-icon {
+      height: 1.6rem;
+    }
+  }
+  & p {
+    color: #9b9b9b;
+    font-family: HelveticaNowText-Thin;
+    font-weight: 900;
+    text-align: center;
+  }
+}

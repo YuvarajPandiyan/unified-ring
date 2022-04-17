@@ -1,0 +1,29 @@
+.header {
+  height: 3rem;
+  padding: 1.313rem;
+  display: flex;
+  @media only screen and (min-width: 600px) {
+    padding-left: 3.813rem;
+    padding-right: 3.813rem;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  &-logo {
+    height: 2.334rem;
+  }
+
+  &-phone {
+    display: flex;
+    align-items: center;
+    &-icon {
+      height: 0.609rem;
+      padding-right: 0.164rem;
+    }
+  }
+}

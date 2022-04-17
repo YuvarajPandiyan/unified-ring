@@ -1,0 +1,53 @@
+// font import
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("./font/Acumin-BdPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin Pro light";
+  src: url("./font/Acumin-RPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNowText-Thin";
+  src: url("./font/HelveticaNowText-Thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Acumin Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
+
+// mobile first
+$mobile-size: 600px;
+
+$heading-color: black;
+$home-pae-btn-color: #7c24ef;
+$home-page-btn-border-and-text-color: #1660ea;
+$heading-size: 1.4rem;
+$sub-heading-size: 1.35rem;
+
+// card
+$card-bg: #eef5f6;
+$card-title-size: 1.75rem;

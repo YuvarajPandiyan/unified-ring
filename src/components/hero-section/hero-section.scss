@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.hero-container {
+  background: transparent url("../../../public/image/hero-image-phone.png") 0%
+    0% no-repeat padding-box;
+  background-size: cover;
+  height: 16rem;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    .hero-container-sub {
+      width: 42rem;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    background: transparent url("../../../public/image/hero-image.png") 0% 0%
+      no-repeat padding-box;
+    background-size: cover;
+    height: 34rem;
+    background-position: center;
+  }
+
+  .heading {
+    padding: 1.688rem 2.5rem 1rem 2.5rem;
+    margin: 0;
+    text-align: center;
+    color: #1e1e1e;
+    font-size: $heading-size;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 3.625rem;
+      text-align: start;
+      padding-top: 5.313rem;
+    }
+  }
+  .cta-align {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.813rem;
+    align-content: center;
+    @media only screen and (min-width: 600px) {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding-left: 2.5rem;
+      padding-top: 1rem;
+    }
+  }
+}

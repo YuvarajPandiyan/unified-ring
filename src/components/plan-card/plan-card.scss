@@ -1,0 +1,144 @@
+.plan-container {
+  position: relative;
+  top: 20rem;
+  @media only screen and (min-width: 600px) {
+    // width: 50rem;
+  }
+
+  .plan {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 1.727rem;
+    margin: 1rem;
+    font-family: Acumin Pro;
+
+    @media only screen and (min-width: 600px) {
+      width: 24rem;
+    }
+
+    & h4 {
+      text-align: left;
+      letter-spacing: 0px;
+      color: #1d76f2;
+      padding-bottom: 1rem;
+      font-size: 1.375rem;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+
+    .buy-now {
+      width: auto;
+      padding: 0.938rem 0 0.938rem 0;
+    }
+
+    &-price {
+      text-align: left;
+      letter-spacing: 0px;
+      color: #1d76f2;
+      text-transform: uppercase;
+      font-size: 2.813rem;
+    }
+
+    &-validity {
+      letter-spacing: 0px;
+      color: #0b0b0b;
+      font-size: 0.875rem;
+      padding-bottom: 1.563rem;
+    }
+
+    .trial-btn {
+      background: #e7f0fd 0% 0% no-repeat padding-box;
+      border: 1px solid #c2d9fa;
+      border-radius: 3px;
+      width: auto;
+    }
+  }
+
+  .plan-deities {
+    padding-top: 1.5rem;
+    text-decoration: underline;
+  }
+  .accordion {
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding-bottom: 1.375rem;
+
+    &-arrow {
+      padding-left: 0.813rem;
+    }
+  }
+
+  .active,
+  .accordion:hover {
+    text-decoration: none;
+  }
+
+  .panel {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    @media only screen and (min-width: 600px) {
+      display: block !important;
+      // height: 0;
+      transition: all;
+      transition-delay: 5s;
+      animation-timing-function: cubic-bezier(0, 0.63, 1, -0.04);
+      text-align: left;
+      font: normal normal normal 13px/14px Acumin Pro light;
+      letter-spacing: 0px;
+      line-height: 2rem;
+      color: #000000;
+    }
+  }
+
+  .panel-active {
+    display: block !important;
+    // height: 0;
+    transition: all;
+    transition-delay: 5s;
+    animation-timing-function: cubic-bezier(0, 0.63, 1, -0.04);
+    text-align: left;
+    font: normal normal normal 13px/14px Acumin Pro light;
+    letter-spacing: 0px;
+    line-height: 2rem;
+    color: #000000;
+  }
+  .highlight {
+    @media only screen and (min-width: 600px) {
+      margin-top: -3rem;
+    }
+  }
+  .recommended {
+    background: #7c24ef 0% 0% no-repeat padding-box;
+    text-align: start;
+    padding-left: 2.5rem;
+    font: normal normal 600 13px/47px Acumin Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    // margin-top: 1rem;
+    margin-bottom: 1.125rem;
+    width: 12rem;
+    margin-left: -2.5rem;
+  }
+
+  .recommended-text {
+    color: #7c24ef !important;
+  }
+
+  .plan-sub {
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      justify-content: center;
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+  }
+}

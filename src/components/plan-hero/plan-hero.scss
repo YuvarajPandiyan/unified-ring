@@ -1,0 +1,166 @@
+.plan-hero-container {
+  height: 26.063rem;
+  background: transparent linear-gradient(180deg, #f0f6ff 0%, #d6e6ff 100%) 0%
+    0% no-repeat padding-box;
+  position: absolute;
+
+  @media only screen and (min-width: 600px) {
+    width: 100vw;
+  }
+  & h1 {
+    padding-top: 1.875rem;
+    text-align: center;
+    font: normal normal bold 23px/28px Acumin Pro;
+    letter-spacing: 0px;
+    color: #00205c;
+    opacity: 1;
+    @media only screen and (min-width: 600px) {
+      font: normal normal bold 38px/43px Acumin Pro;
+      letter-spacing: 0px;
+      color: #000000;
+      padding-bottom: 3.375rem;
+    }
+  }
+
+  & h2 {
+    text-align: center;
+    font: normal normal medium 16px/43px Helvetica Now Text;
+    letter-spacing: 0px;
+    color: #032c7e;
+    opacity: 1;
+    padding-top: 21px;
+
+    @media only screen and (min-width: 600px) {
+      text-align: center;
+      font: normal normal normal 16px/43px Helvetica Now Text;
+      letter-spacing: 0px;
+      color: #032c7e;
+      padding-left: 2rem;
+    }
+  }
+
+  .range-btn {
+    background: #c8dcfd 0% 0% no-repeat padding-box;
+    border: 1px solid #b9d1f8;
+    border-radius: 22px;
+    opacity: 1;
+    padding: 0rem 0.938rem 0rem 0.938rem;
+    margin-left: 3.625rem;
+    margin-right: 3.625rem;
+    margin-top: 0.875rem;
+    text-align: center;
+
+    & button {
+      color: #032c7e;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    @keyframes example {
+      0% {
+        opacity: 10%;
+      }
+      25% {
+        opacity: 30%;
+      }
+      50% {
+        opacity: 50%;
+      }
+      75% {
+        opacity: 70%;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+
+    &--selected {
+      background: #1660ea 0% 0% no-repeat padding-box;
+      border-radius: 17px;
+
+      text-align: center;
+      letter-spacing: 0px;
+      color: white !important;
+      padding: 0.625rem 1rem 0.625rem 1rem;
+      margin-top: 0.125rem;
+      margin-bottom: 0.125rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      animation-name: example;
+      transition: all;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0, 0.63, 1, -0.04);
+    }
+  }
+
+  .plan-time {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    padding-top: 1.375rem;
+    @media only screen and (min-width: 600px) {
+      align-items: center;
+    }
+    &--not_active {
+      text-align: center;
+      //   font: normal normal normal 14px/43px Helvetica Now Text;
+      letter-spacing: 0px;
+      color: #032c7e;
+    }
+    &--active {
+      text-align: center;
+      //   font: normal normal normal 14px/43px Helvetica Now Text;
+      letter-spacing: 0px;
+      color: #1660ea;
+      border-bottom: 3px solid #032c7e;
+      //       background: #1660EA 0% 0% no-repeat padding-box;
+      border-radius: 2px;
+    }
+  }
+  .line {
+    border: 0.5px solid #032c7e;
+    opacity: 0.19;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  .users-range-container {
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 16.125rem;
+      padding-right: 16.125rem;
+    }
+  }
+  .users-range {
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .monthly {
+    @media only screen and (min-width: 600px) {
+      display: flex;
+    }
+    & h2 {
+      text-align: center;
+      font: normal normal medium 16px/43px Helvetica Now Text;
+      letter-spacing: 0px;
+      color: #032c7e;
+      opacity: 1;
+      padding-top: 21px;
+
+      @media only screen and (min-width: 600px) {
+        text-align: center;
+        font: normal normal normal 16px/43px Helvetica Now Text;
+        letter-spacing: 0px;
+        color: #032c7e;
+        padding-right: 2rem;
+      }
+    }
+  }
+}
